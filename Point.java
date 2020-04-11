@@ -1,16 +1,19 @@
 class Point {
 	String id
 	double x,y;
+	double p,q; //Uste 2 random tocki
 
 	//TODO add new variable
 
 
 	//TODO constructor
-	public Point(String id, double x, double y, String color)
+	public Point(String id, double x, double y, String color, double p, double q)
 	{
 		this.id=id;
 		this.x=x;
 		this.y=y;
+		this.p=p;		//Dodadeni i vo constructorot
+		this.q=q;		//Dodadeni i vo constructorot
 		this.color=color;
 	}
 
@@ -39,6 +42,21 @@ class Point {
 		return y;
 	}
 
+	public double getP() {
+		return p;
+	}
+
+	public double getQ() {
+		return q;
+	}
+
+	public void setP(double p) {
+		this.p = p;
+	}
+
+	public void setQ(double q) {
+		this.q = q;
+	}
 
 	public void move (char xDirection, char yDirection) {
 		//TODO
